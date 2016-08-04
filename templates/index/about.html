@@ -1,0 +1,33 @@
+{% extends "components/card.html" %}
+{% import "generic/util.html" as util %}
+{% block classes %}layout-h card-content{% endblock %}
+{% block body %}
+<table class="info-grid layout">
+    <tr>
+        <td>Email:</td>
+        <td>{{util.ext_url("mailto:shuhao@cs.umd.edu", "shuhao@cs.umd.edu")}}</td>
+    </tr>
+    <tr>
+        <td>Phone:</td>
+        <td>+1 (240) 467-4363</td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td>
+            TBD, A.V. Williams Building<br/>
+            University of Maryland<br/>
+            College Park, MD 20742<br/>
+            United States
+        </td>
+    </tr>
+    <tr>
+        <td>GitHub:</td>
+        <td>{{util.ext_url("http://github.com/johnmave126", "johnmave126")}}</td>
+    </tr>
+</table>
+<div class="intro">
+<p>I am a PhD student in the Department of Computer Science at {{util.ext_url("http://www.cs.umd.edu", "University of Maryland, College Park")}}.</p>
+<p>I am interested in Theoretical Computer Science, especially in Graph Theory and Computational Geometry. As a previous OI and ACM/ICPC contestant, I also keep an eye on Number Theory and Combinatorics.</p>
+<p>I was born in China. I got my Bachelor of Engineering in Computer Science from {{util.ext_url("http://www.ust.hk", "The Hong Kong University of Science and Technology")}}.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+<div class="content layout center-layout">
+    {%- for file in page['cards'] %}
+    {% include page['prefix'] + '/' + file %}
+    {%- endfor %}
+</div>

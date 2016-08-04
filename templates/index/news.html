@@ -1,0 +1,15 @@
+{% extends "components/card.html" %}
+{% import "generic/util.html" as util %}
+{% macro dot() %}<td class="news-dot"><div></div></td>{% endmacro %}
+{% block classes %}layout card-content{% endblock %}
+{% block body %}
+<div class="card-title">News</div>
+<div class="card-cont news-list">
+    <table class="news-grid">
+        <tr>
+            <td>2016.07.25</td>{{dot()}}
+            <td>Arrive at College Park. Ready for PhD life.</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

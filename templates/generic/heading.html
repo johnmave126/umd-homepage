@@ -1,0 +1,15 @@
+<div class="heading layout center-layout">
+    <div class="heading-bg"></div>
+    <div class="layout-h nav">
+        <div class="nav-logo"></div>
+        <div class="layout-h nav-menu">
+            {%- for p in pages %}
+                {%- if p['type'] == 'page' %}
+                <a class="nav-item {% if p['prefix'] == page['prefix'] %}nav-current{% endif %}" href="{{p['prefix'] + '.html'}}">{{p['title']}}</a>
+                {%- elif p['type'] == 'link' %}
+                <a class="nav-item" target="_blank" href="{{p['link']}}">{{p['title']}}</a>
+                {%- endif %}
+            {%- endfor %}
+        </div>
+    </div>
+</div>

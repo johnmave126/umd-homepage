@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Home",
+        "type": "page",
+        "prefix": "index",
+        "cards": 
+        [
+            "avatar.html",
+            "about.html",
+            "news.html"
+        ]
+    },
+    {
+        "title": "CV",
+        "type": "link",
+        "link": "assets/CV.pdf"
+    }
+]
